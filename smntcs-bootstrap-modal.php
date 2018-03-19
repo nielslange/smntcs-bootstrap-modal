@@ -1,21 +1,17 @@
 <?php
 /*
-Plugin Name: SMNTCS Bootstrap Modal
-Description: Open any shortcode within a <a href="http://getbootstrap.com/javascript/#modals" target="_blank">Twitter Bootstrap</a> modal.
-Version: 1.3.0
-Author: Niels Lange
-Author URI: https://nielslange.com
-Requires at least: 3.4
-Tested up to: 4.7
-License: GPLv2 or later
-Text Domain: smntcs-bootstrap-modal
-Domain Path: /languages/
-Version: 1.4
-Requires at least: 3.0
-Tested up to: 4.9
-License: GPLv2
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
-*/
+ * Plugin Name: SMNTCS Bootstrap Modal
+ * Plugin URI: https://github.com/nielslange/smntcs-bootstrap-modal
+ * Description: Open any shortcode within a <a href="http://getbootstrap.com/javascript/#modals" target="_blank">Twitter Bootstrap</a> modal.
+ * Author: Niels Lange
+ * Author URI: https://nielslange.com
+ * Text Domain: smntcs-bootstrap-modal
+ * Version: 1.5
+ * Requires at least: 3.0
+ * Tested up to: 4.9
+ * License: GPL2+
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ */
 
 /*  Copyright 2014-2016	Niels Lange (email : info@nielslange.de)
 

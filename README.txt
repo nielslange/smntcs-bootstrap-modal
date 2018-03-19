@@ -19,7 +19,7 @@ Tired of looking for "another" plugin to open your favorite contact form as a po
 
 1. Upload 'smntcs-bootstrap-modal' to the '/wp-content/plugins/' directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Create a form, e.g. using Contact Form 7 (https://wordpress.org/plugins/contact-form-7/)
+3. Create a form, e.g. using <a href="https://wordpress.org/plugins/contact-form-7/" target="_blank">Contact Form 7</a>
 4. Grab the shortcode and go to the settings page of the plugin
 5. Provide a title, a button text and a shortcode hit the “Save Changes” button
 6. Copy the provided shortcode and paste it within a post, page or widget

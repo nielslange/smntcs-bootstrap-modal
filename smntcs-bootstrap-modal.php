@@ -1,9 +1,13 @@
 <?php
 /*
 Plugin Name: SMNTCS Bootstrap Modal
-Description: Open any shortcode within a <a href="http://getbootstrap.com/javascript/#modals" target="_blank">Twitter Bootstrap</a> modal
+Description: Open any shortcode within a <a href="http://getbootstrap.com/javascript/#modals" target="_blank">Twitter Bootstrap</a> modal.
+Version: 1.3.0
 Author: Niels Lange
 Author URI: https://nielslange.com
+Requires at least: 3.4
+Tested up to: 4.7
+License: GPLv2 or later
 Text Domain: smntcs-bootstrap-modal
 Domain Path: /languages/
 Version: 1.4

@@ -1,10 +1,11 @@
  === SMNTCS Bootstrap Modal ===
+
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LGS558RFNR3JY
-Tags: Twitter Bootstrap Modal, modal, modal window, modal form, modal box, popup, popup box, popup form, popup window  
+Tags: Twitter Bootstrap Modal, modal, modal window, modal form, modal box, popup, popup box, popup form, popup window
+Stable tag: 1.5
 Requires at least: 3.0
 Tested up to: 4.9
-Stable tag: 1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +13,7 @@ Open any shortcode within a <a href="http://getbootstrap.com/javascript/#modals"
 
 == Description ==
 
-Tired of looking for "another" plugin to open your favorite contact form as a popup? Don't look any further. SMNTCS Bootstrap Modal allows you to open any shortcode, e.g. from Contact Form 7 or Gravity Forms, within a Twitter Bootstrap Modal. 
+Tired of looking for "another" plugin to open your favorite contact form as a popup? Don't look any further. SMNTCS Bootstrap Modal allows you to open any shortcode, e.g. from Contact Form 7 or Gravity Forms, within a Twitter Bootstrap Modal.
 
 == Installation ==
 
@@ -32,7 +33,10 @@ Tired of looking for "another" plugin to open your favorite contact form as a po
 
 == Changelog ==
 
-= 1.3 =
+= 1.5 =
+* Add README.md
+
+= 1.4 =
 * Add POT file for language support
 
 = 1.3 =

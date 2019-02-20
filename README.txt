@@ -1,11 +1,11 @@
- === SMNTCS Bootstrap Modal ===
+=== SMNTCS Bootstrap Modal ===
 
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LGS558RFNR3JY
-Tags: Twitter Bootstrap Modal, modal, modal window, modal form, modal box, popup, popup box, popup form, popup window
-Stable tag: 1.5
+Tags: Twitter Bootstrap Modal, popup form, shortcode popup, shortcode modal
+Stable tag: 1.6
 Requires at least: 3.0
-Tested up to: 5.0
+Tested up to: 5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,20 +33,23 @@ Tired of looking for "another" plugin to open your favorite contact form as a po
 
 == Changelog ==
 
+= 1.6 =
+* Tested up to 5.1
+
 = 1.5 =
-* Add README.md
+* Added README.md
 
 = 1.4 =
-* Add POT file for language support
+* Added POT file for language support
 
 = 1.3 =
-* Add donation link
+* Added donation link
 
 = 1.2 =
-* Update domain path
+* Updateed domain path
 
 = 1.1 =
-* Update textdomain
+* Updateed textdomain
 
 = 1.0 =
 * Initial release

@@ -3,9 +3,10 @@
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LGS558RFNR3JY
 Tags: Twitter Bootstrap Modal, popup form, shortcode popup, shortcode modal
-Stable tag: 1.6
+Stable tag: 1.7
 Requires at least: 3.0
 Tested up to: 5.1
+Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +33,9 @@ Tired of looking for "another" plugin to open your favorite contact form as a po
 4. See the plugin in action
 
 == Changelog ==
+
+= 1.7 =
+* Refactored based on PHPCS and WPCS
 
 = 1.6 =
 * Tested up to 5.1

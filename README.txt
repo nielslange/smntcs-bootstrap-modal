@@ -4,7 +4,7 @@ Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LGS558RFNR3JY
 Tags: Twitter Bootstrap Modal, popup form, shortcode popup, shortcode modal
 Stable tag: 1.8
-Requires at least: 3.0
+Requires at least: 3.4
 Tested up to: 5.2
 Requires PHP: 5.6
 License: GPLv2 or later

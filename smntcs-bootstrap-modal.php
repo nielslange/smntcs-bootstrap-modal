@@ -6,10 +6,10 @@
  * Author: Niels Lange
  * Author URI: Niels Lange <info@nielslange.de>
  * Text Domain: smntcs-bootstrap-modal
- * Version: 1.7
+ * Version: 1.8
  * Requires at least: 3.0
+ * Tested up to: 5.2
  * Requires PHP: 5.6
- * Tested up to: 5.1
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  *

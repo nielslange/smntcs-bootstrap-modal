@@ -6,7 +6,7 @@
  * @package    WordPress
  * @subpackage SMNTCS Bootstrap Modal
  * @author     Niels Lange <info@nielslange.de>
- * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
+ * @license    GPLv3 http://opensource.org/licenses/gpl-license.php
  */
 
 ?>

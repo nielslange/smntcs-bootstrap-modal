@@ -3,12 +3,12 @@
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LGS558RFNR3JY
 Tags: Twitter Bootstrap Modal, popup form, shortcode popup, shortcode modal
-Stable tag: 1.8
+Stable tag: 1.9
 Requires at least: 3.4
-Tested up to: 5.2
+Tested up to: 5.3
 Requires PHP: 5.6
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl.html
 
 Open any shortcode within a <a href="http://getbootstrap.com/javascript/#modals" target="_blank">Twitter Bootstrap</a> modal
 
@@ -33,6 +33,10 @@ Tired of looking for "another" plugin to open your favorite contact form as a po
 4. See the plugin in action
 
 == Changelog ==
+
+= 1.9 =
+* Update Bootstrap 3.3.6 to 3.4.1
+* Test up to 5.3
 
 = 1.8 =
 * Test up to 5.2

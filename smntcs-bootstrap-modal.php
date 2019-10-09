@@ -6,41 +6,50 @@
  * Author: Niels Lange
  * Author URI: Niels Lange <info@nielslange.de>
  * Text Domain: smntcs-bootstrap-modal
- * Version: 1.8
- * Requires at least: 3.0
- * Tested up to: 5.2
+ * Version: 1.9
+ * Requires at least: 3.4
+ * Tested up to: 5.3
  * Requires PHP: 5.6
- * License: GPL2+
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * License: GPLv3
+ * License URI: http://www.gnu.org/licenses/gpl.html
  *
  * @category   Plugin
  * @package    WordPress
  * @subpackage SMNTCS Bootstrap Modal
  * @author     Niels Lange <info@nielslange.de>
- * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
+ * @license    GPLv3 http://opensource.org/licenses/gpl-license.php
  */
 
-register_activation_hook( __FILE__, 'smntcs_bootstrap_modal_activate_plugin' );
 /**
  * Activate plugin
+ *
+ * @since 1.0.0
+ * @return void
  */
 function smntcs_bootstrap_modal_activate_plugin() {
 	add_option( 'smntcs_bootstrap_modal_title', '' );
 	add_option( 'smntcs_bootstrap_modal_shortcode', '' );
 }
+register_activation_hook( __FILE__, 'smntcs_bootstrap_modal_activate_plugin' );
 
-register_deactivation_hook( __FILE__, 'smntcs_bootstrap_modal_deactivate_plugin' );
 /**
  * Deactivate plugin
+ *
+ * @since 1.0.0
+ * @return void
  */
 function smntcs_bootstrap_modal_deactivate_plugin() {
 	delete_option( 'smntcs_bootstrap_modal_title' );
 	delete_option( 'smntcs_bootstrap_modal_button' );
 	delete_option( 'smntcs_bootstrap_modal_shortcode' );
 }
+register_deactivation_hook( __FILE__, 'smntcs_bootstrap_modal_deactivate_plugin' );
 
 /**
  * Initialize plugin
+ *
+ * @since 1.0.0
+ * @return void
  */
 function smntcs_bootstrap_modal_admin_init() {
 	register_setting( 'smntcs_bootstrap_modal', 'smntcs_bootstrap_modal_title' );
@@ -50,6 +59,9 @@ function smntcs_bootstrap_modal_admin_init() {
 
 /**
  * Add menu item in backend
+ *
+ * @since 1.0.0
+ * @return void
  */
 function smntcs_bootstrap_modal_admin_menu() {
 	add_options_page( 'Bootstrap Modal', 'Bootstrap Modal', 'manage_options', 'bootstrap-modal', 'smntcs_bootstrap_modal_options_page' );
@@ -57,6 +69,9 @@ function smntcs_bootstrap_modal_admin_menu() {
 
 /**
  * Add options page in backend
+ *
+ * @since 1.0.0
+ * @return void
  */
 function smntcs_bootstrap_modal_options_page() {
 	include WP_PLUGIN_DIR . '/smntcs-bootstrap-modal/options.php';
@@ -64,22 +79,25 @@ function smntcs_bootstrap_modal_options_page() {
 
 /**
  * Initialize show plugin in backend
+ *
+ * @since 1.0.0
  */
 if ( is_admin() ) {
 	add_action( 'admin_init', 'smntcs_bootstrap_modal_admin_init' );
 	add_action( 'admin_menu', 'smntcs_bootstrap_modal_admin_menu' );
 }
 
-add_action( 'plugins_loaded', 'smntcs_bootstrap_modal_load_textdomain' );
 /**
  * Load textdomain
+ *
+ * @since 1.0.0
+ * @return void
  */
 function smntcs_bootstrap_modal_load_textdomain() {
 	load_plugin_textdomain( 'smntcs-bootstrap-modal', false, false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
 }
+add_action( 'plugins_loaded', 'smntcs_bootstrap_modal_load_textdomain' );
 
-$plugin = plugin_basename( __FILE__ );
-add_filter( "plugin_action_links_$plugin", 'smntcs_bootstrap_modal_plugin_settings_link' );
 /**
  * Add settings link on plugin page
  *
@@ -93,10 +111,13 @@ function smntcs_bootstrap_modal_plugin_settings_link( $links ) {
 
 	return $links;
 }
+add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'smntcs_bootstrap_modal_plugin_settings_link' );
 
-add_shortcode( 'smntcs-modal', 'smntcs_bootstrap_modal_define_shortcode' );
 /**
  * Define shortcode
+ *
+ * @since 1.0.0
+ * @return void
  */
 function smntcs_bootstrap_modal_define_shortcode() {
 	?>
@@ -107,8 +128,8 @@ function smntcs_bootstrap_modal_define_shortcode() {
 	</p>
 	<?php
 }
+add_shortcode( 'smntcs-modal', 'smntcs_bootstrap_modal_define_shortcode' );
 
-add_action( 'wp_head', 'smntcs_bootstrap_modal_css_frontend' );
 /**
  * Apply custom CSS to frontend
  */
@@ -122,13 +143,16 @@ function smntcs_bootstrap_modal_css_frontend() {
 		.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
 			padding-right: 0px !important;
 		}
-	</style>
+		</style>
 	<?php
 }
+add_action( 'wp_head', 'smntcs_bootstrap_modal_css_frontend' );
 
-add_action( 'admin_head', 'smntcs_bootstrap_modal_css_backend' );
 /**
  * Apply custom CSS to backend
+ *
+ * @since 1.0.0
+ * @return void
  */
 function smntcs_bootstrap_modal_css_backend() {
 	?>
@@ -147,18 +171,21 @@ function smntcs_bootstrap_modal_css_backend() {
 			padding: 4px 8px;
 			margin: 0;
 		}
-	</style>
+		</style>
 	<?php
 }
+add_action( 'admin_head', 'smntcs_bootstrap_modal_css_backend' );
 
-add_action( 'wp_footer', 'smntcs_bootstrap_modal' );
 /**
  * Show site verification code in frontend
+ *
+ * @since 1.0.0
+ * @return void
  */
 function smntcs_bootstrap_modal() {
-	wp_register_style( 'bootstrap-css', plugins_url( 'assets/bootstrap-3.3.6/css/bootstrap.min.css', __FILE__ ), '', '3.3.6', 'all' );
+	wp_register_style( 'bootstrap-css', plugins_url( 'assets/bootstrap-3.4.1/css/bootstrap.min.css', __FILE__ ), '', '3.3.6', 'all' );
 	wp_enqueue_style( 'bootstrap-css' );
-	wp_register_script( 'bootstrap-js', plugins_url( 'assets/bootstrap-3.3.6/js/bootstrap.min.js', __FILE__ ), array( 'jquery' ), '3.3.6', true );
+	wp_register_script( 'bootstrap-js', plugins_url( 'assets/bootstrap-3.4.1/js/bootstrap.min.js', __FILE__ ), array( 'jquery' ), '3.3.6', true );
 	wp_enqueue_script( 'bootstrap-js' );
 	?>
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -185,3 +212,4 @@ function smntcs_bootstrap_modal() {
 	</div>
 	<?php
 }
+add_action( 'wp_footer', 'smntcs_bootstrap_modal' );

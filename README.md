@@ -1,8 +1,8 @@
-# SMNTCS Adobe Typekit Fonts
+# SMNTCS Bootstrap Modal
 
-[![](https://img.shields.io/github/license/nielslange/smntcs-bootstrap-modal.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
-[![](https://plugintests.com/plugins/smntcs-adobe-typekit-fonts/wp-badge.svg)](https://plugintests.com/plugins/smntcs-adobe-typekit-fonts/latest)
-[![](https://plugintests.com/plugins/smntcs-adobe-typekit-fonts/php-badge.svg)](https://plugintests.com/plugins/smntcs-adobe-typekit-fonts/latest)
+[![](https://img.shields.io/github/license/nielslange/smntcs-bootstrap-modal.svg)](http://www.gnu.org/licenses/gpl.html)
+[![](https://plugintests.com/plugins/smntcs-bootstrap-modal/wp-badge.svg)](https://plugintests.com/plugins/smntcs-bootstrap-modal/latest)
+[![](https://plugintests.com/plugins/smntcs-bootstrap-modal/php-badge.svg)](https://plugintests.com/plugins/smntcs-bootstrap-modal/latest)
 [![](https://img.shields.io/wordpress/plugin/dt/smntcs-bootstrap-modal.svg)](https://wordpress.org/plugins/smntcs-bootstrap-modal/)
 [![](https://img.shields.io/wordpress/plugin/v/smntcs-bootstrap-modal.svg)](https://wordpress.org/plugins/smntcs-bootstrap-modal/)
 [![](https://img.shields.io/github/tag/nielslange/smntcs-bootstrap-modal.svg)](https://wordpress.org/plugins/smntcs-bootstrap-modal/)
